@@ -1,13 +1,16 @@
 {
-    "name": "Hello",
-    "version": "1.0",
-    "manifest_version": 2,
-    "description": "Says hello to SO",
-    "permissions": ["tabs", "*://*.stackoverflow.com/*"],
-    "content_scripts": [
-      {
-        "matches": ["*://*.stackoverflow.com/*"],
-        "js": ["jquery-3.4.1.min.js", "content.js"]
-      }
-    ]
-  }
+  "name": "ImgurStack",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Proxy service for imgur in stackoverflow domains",
+  "icons": {
+    "128": "logo.png"
+  },
+  "permissions": [ "tabs", "*://*.stackoverflow.com/*" ],
+  "content_scripts": [
+    {
+      "matches": [ "*://*.stackoverflow.com/*" ],
+      "js": [ "jquery-3.4.1.min.js", "content.js" ]
+    }
+  ]
+}
